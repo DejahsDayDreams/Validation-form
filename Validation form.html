@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Form</title>
+    <style>
+        
+        /* Style for the form container */
+        .form-container {
+            max-width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f6;
+        }
+        
+        /* Style for input fields */
+        .form-input {
+            width: 97%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+        
+        /* Style for the submit button */
+        .submit-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        
+        /* Style for the submit button on hover */
+        .submit-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="form-container">
+    <h1>Contact Us</h1>
+    <form action="Validation form.php" method="post">
+        <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+        <br>
+        <input type="email" name="email" placeholder="Your Email" class="form-input" required>
+        <br>
+        <input type="text" name="id_number" placeholder="ID Number" class="form-input" required>
+        <br>
+        <input type="tel" name="phone" placeholder="Phone Number" class="form-input" required>
+        <br>
+        <input type="text" name="address" placeholder="Physical Address" class="form-input" required>
+        <br>
+        
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+        <!-- Add more gender options if needed -->
+        <br><br>
+        <label for="nationality">Nationality:</label>
+        <select name="nationality" class="form-input" required>
+            <option value="South Africa">South Africa</option>
+            <option value="British">British</option>
+            <option value="Mexican">Mexican</option>
+            <option value="Korean">Korean</option>
+            <option value="Indian">Indian</option>
+            
+        </select>
+        <br><br>
+        <textarea name="comment" placeholder="Comment" class="form-input" required></textarea>
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+</div>
+
+    </div>
+</body>
+</html>
